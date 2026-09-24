@@ -32,7 +32,7 @@ app.add_middleware(
 app.include_router(api_v1_router)
 
 def custom_openapi():
-    """Custom OpenAPI schema generator to render HTML select dropdowns for enums in Swagger UI."""
+
     if app.openapi_schema:
         return app.openapi_schema
     from fastapi.openapi.utils import get_openapi
